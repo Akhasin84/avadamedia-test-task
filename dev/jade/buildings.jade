@@ -1,0 +1,27 @@
+mixin buildings_item(srcWay, NAME )
+	.house_block
+		.house_block__up
+			img(src="images/#{srcWay}.jpg" alt="ZHK")
+			a(href="#") Подробнее о ЖК
+				img(src="images/right.png")
+		.house_block_down
+			h4  #{NAME}
+
+			p.region
+				b Район: 
+				span Приморский
+			p.deadline 
+				b Срок сдачи: 
+				span II квартал 2017 года
+			p.price 
+				b Цена от: 
+				span 21 770 грн./м2
++buildings_item("1", "ЖК «Мандарин»")
++buildings_item("2", "ЖК «Четыре сезона»")
++buildings_item("3", "ЖК «Новый берег»")
++buildings_item("4", "ЖК «Альтаир. Звездный городок»")
++buildings_item("5", "ЖК «Альтаир-2»")
++buildings_item("6", "ЖК «Гольфстрим. Дом на Генуэзской»")
++buildings_item("7", "ЖК «Бельэтаж. Дом на Белинского»")
++buildings_item("8", "ЖК «Апельсин»")
+
